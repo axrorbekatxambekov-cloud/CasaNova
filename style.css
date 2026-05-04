@@ -647,13 +647,13 @@ h2 {
 
 .premium-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr)
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
 .premium-card {
-  width: 30%;
+  width: 100%;
+  height: 200px;
   padding: 20px;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.03);
@@ -885,6 +885,9 @@ h2 {
 }
 
 .top-circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
     width: 95px;
     height: 95px;
     border-radius: 50%;
@@ -1007,4 +1010,8 @@ h2 {
     color: #666;
     line-height: 1.8;
     font-size: 16px;
+}
+.order-card{
+  font-size: 30px;
+
 }
