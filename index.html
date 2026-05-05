@@ -3,407 +3,416 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CasaNova</title>
-  <link rel="icon"
-    href="https://chatgpt.com/backend-api/estuary/content?id=file_000000001364722fab5346a5496e4afe&ts=493689&p=fs&cid=1&sig=e83f666a5eedf85837563aae4b7cebc36c4c9810b312720e419faa4018ed144c&v=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CasaNova | Premium Mebellar & Hunarmandlar Markazi</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
-
-<style>
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
 
 <body>
 
-  <header>
-    <h1>Casa<span style="color: #a67c52;">Nova</span></h1>
-    <nav>
-      <a href="#hero">Bosh sahifa</a>
-      <a href="#products">Mahsulotlar</a>
-      <a href="#container">Kategoriyalar</a>
-      <a href="#footer">Biz haqimizda</a>
-      <a href="#reviews-section">Mijozlar fikrlari</a>
-      <a href="#casanova-section">Buyurtmalar</a>
+  <!-- Navigatsiya -->
+  <header class="main-header">
+    <div class="logo">
+      <a href="#">Casa<span>Nova</span></a>
+    </div>
+
+    <!-- Mobil menyu uchun yashirin checkbox -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="nav-links">
+      <a href="#hero">Asosiy</a>
+      <a href="#handmade">Hunarmandlar</a>
+      <a href="products.html">Mebellar</a>
+      <a href="#categories">Kategoriyalar</a>
+      <a href="#reviews">Izohlar</a>
+      <div class="nav-actions">
+        <a href="#sell-modal" class="btn-sell"><i class="fa-solid fa-hammer"></i> Sotish</a>
+        <a href="#cart-modal" class="cart-icon"><i class="fa-solid fa-bag-shopping"></i><span>3</span></a>
+      </div>
     </nav>
-    <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
   </header>
 
-  <section class="hero" id="hero">
-    <div class="left">
-      <p class="small">YANGI KOLLEKSIYA — 2026</p>
-      <h2>Uyingizga <span>qulaylik </span>olib keling</h2>
-      <p class="desc">
-        Zamonaviy va klassik uslubdagi eksklyuziv mebellar to‘plami.
-      </p>
-
-      <div class="buttons">
-        <button class="dark">Katalogni ko‘rish</button>
-        <button class="light">3D Ko‘rinish</button>
-      </div>
-
-      <div class="stats">
-        <div>
-          <h3>2,400+</h3>
-          <p>Mahsulot</p>
-        </div>
-        <div>
-          <h3>12k+</h3>
-          <p>Mamnun mijoz</p>
-        </div>
-        <div>
-          <h3>7 yil</h3>
-          <p>Tajriba</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="right">
-      <img class="image" style="width: 295px; height: 150px; background:no-repeat center/cover"
-        src="https://avatars.mds.yandex.net/i?id=bfc71e1fd6f91bd5157bd6f2e976a3b601475661-9095279-images-thumbs&n=13" alt="">
-      <img class="image" style="width: 295px; height: 150px; background:no-repeat center/cover;"
-        src="https://avatars.mds.yandex.net/i?id=04e31cd0e3f875252bf62556ff0388684a6eff86-5518476-images-thumbs&n=13"
-        alt="">
-      <img class="image" style="width: 305px; height: 150px; background: no-repeat center/cover;"
-        src="https://img.freepik.com/free-photo/minimalist-interior-with-small-table-two-chairs_23-2151986799.jpg?semt=ais_hybrid&w=740&q=80"
-        alt="">
-    </div>
-  </section>
-
-  <section class="container" id="container">
-    <h2>Kategoriyalar</h2>
-
-    <div class="cards">
-
-
-      <div class="card">
-        <div class="circle"><i class="fa-solid vercel fa-couch"></i></div>
-        <p class="card-text1">Divan & Kreslo</p>
-        <p class="card-text2">186 Mahsulot</p>
-      </div>
-
-      <div class="card">
-        <div class="circle"><i class="fa-solid vercel fa-bed"></i></div>
-        <p class="card-text1">Yotoqxona</p>
-        <p class="card-text2">124 Mahsulot</p>
-      </div>
-
-      <div class="card">
-        <div class="circle"><i class="fa-solid vercel fa-chair"></i></div>
-        <p class="card-text1">Stol & Stul</p>
-        <p class="card-text2">210 Mahsulot</p>
-      </div>
-
-      <div class="card">
-        <div class="circle"><i class="fa-solid vercel fa-door-closed"></i></div>
-        <p class="card-text1">Shkaf & Javon</p>
-        <p class="card-text2">98 Mahsulot</p>
-      </div>
-
-      <div class="card">
-        <div class="circle"><i class="fa-solid vercel fa-diamond"></i></div>
-        <p class="card-text1">Dekor</p>
-        <p class="card-text2">342 Mahsulot</p>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="products" id="products">
-    <h2>Ommabop Mahsulotlar</h2>
-
-    <div class="product-grid">
-      <div class="product-card">
-        <div class="likee">
-          <input class="checker" type="checkbox">
-          <i class="fa-solid lllll fa-heart"></i>
-        </div>
-        <span class="badge">-20%</span>
-        <div class="image">
-          <img src="https://simplinteriors.com/wp-content/uploads/2016/12/6-1.jpg" alt="">
-        </div>
-        <div class="card-text">
-          <h4>Milano 3 o‘rinli divan</h4>
-          <p class=" old">5,250,000 so‘m</p>
-          <p class="price">4,200,000 so‘m</p>
-        </div>
-        <div clasz>
-          <button>Batafsil</button>
-          <button><i class="fa-solid fa-cart-shopping"></i> Qo'shish</button>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="likee">
-          <input class="checker" type="checkbox">
-          <i class="fa-solid lllll fa-heart"></i>
-        </div>
-        <span class="badge new">YANGI</span>
-        <div class="image">
-          <img src="https://neva-fort.ru/static/userfiles/images/36418/ronda_thumb5_store_gal_big.jpeg" alt="">
-        </div>
-        <h4>Nordic Lounge kreslo</h4>
-        <p class=" price">1,850,000 so‘m</p>
-      </div>
-
-      <div class="product-card">
-        <div class="likee">
-          <input class="checker" type="checkbox">
-          <i class="fa-solid lllll fa-heart"></i>
-        </div>
-        <div class="image"><img
-            src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQMYSi8Wm3tMBZ2EzGM1IRn1g-DVYIPCZSuypTTMfMP20WSDPboSh5Er4WOaHI3S0fU3EdzJu1HIbpAGynuw43tSfr2FfFJo63l7nY0zDnZzMMmWbPVr4jRP7N2KgMpvvQOWCyUuA&usqp=CAc"
-            alt=""></div>
-        <h4>Royal king-size karavot</h4>
-        <p class="price">6,900,000 so‘m</p>
-      </div>
-
-      <div class="product-card">
-        <div class="likee">
-          <input class="checker" type="checkbox">
-          <i class="fa-solid lllll fa-heart"></i>
-        </div>
-        <span class="badge">-15%</span>
-        <div class="image"><img
-            src="https://promet.uz/optimizer/optimize?size=600&format=webp&src=https://xn----7sbenacbbl2bhik1tlb.xn--p1ai/upload/iblock/648/npzsr75sjwz0con0qu8l6bnhrx527g4d/img-shkaf-dlya-odezhdy-tm-12-80.webp"
-         alt=""></div>
-        <h4>Venezia shkaf</h4>
-        <p class=" old">3,650,000 so‘m</p>
-        <p class="price">3,100,000 so‘m</p>
-      </div>
-      <div class="product-card">
-        <div class="likee">
-          <input class="checker" type="checkbox">
-          <i class="fa-solid lllll fa-heart"></i>
-        </div>
-        <span class="badge">Hamyonbop</span>
-        <div class="image"><img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6jT0rRV6PJOld8Wh_AccH92PC3MQV8tA_9Q&s"
-         alt=""></div>
-        <h4>Arivion Sofa 3 o'rindiqlik divan</h4>
-        <p class=" old">6,760,000 so‘m</p>
-        <p class="price">4,700,000 so‘m</p>
-      </div>
-      <div class="product-card">
-        <div class="likee">
-          <input class="checker" type="checkbox">
-          <i class="fa-solid lllll fa-heart"></i>
-        </div>
-        <span class="badge">Hamyonbop</span>
-        <div class="image"><img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTunsbJUwQj9SnOa1bA2KG50fMKpKGs6ZDDkaEK_wxeA&s"
-   alt=""></div>
-        <h4>Chicago kreslosi 1 kishilik</h4>
-        <p class=" old">5,250,000 so‘m</p>
-        <p class="price">4,200,000 so‘m</p>
-      </div>
-      <div class="product-card">
-        <div class="likee">
-          <input class="checker" type="checkbox">
-          <i class="fa-solid lllll fa-heart"></i>
-        </div>
-        <div class="image"><img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_m8nxhug__OblrxiNpDPnt6cxGwwoomCerw&s"
-           alt=""></div>
-        <h4>Verone 1 kishilik kreslo</h4>
-        <p class=" old">4,540,000 so‘m</p>
-        <p class="price">3,100,000 so‘m</p>
-      </div>
-      <div class="product-card">
-        <div class="likee">
-          <input class="checker" type="checkbox">
-          <i class="fa-solid lllll fa-heart"></i>
-        </div>
-        <div class="image"><img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqOnXVeF8iI89wgzBDeco5HdZxzQU5hjcluA&s"
-     alt=""></div>
-        <h4>Verone mebel kolleksiyasi</h4>
-        <p class=" old">10,270,000 so‘m</p>
-        <p class="price">9,870,000 so‘m</p>
-      </div>
-    </div>
-
-  </section>
-  <section class="reviews-section" id="reviews-section">
-
-    <div class="reviews-title">
-        <h2>Mijozlar fikri</h2>
-        <p>CasaNova mijozlarining haqiqiy izohlari</p>
-    </div>
-
-    <div class="reviews-container">
-
-        <div class="review-card">
-            <div class="rating">4.9 ★</div>
-            <h3>Aziza R.</h3>
-            <p>Divan sifati juda zo‘r. Yetkazib berish tez bo‘ldi va xizmat juda professional.</p>
-        </div>
-
-        <div class="review-card">
-            <div class="rating">5.0 ★</div>
-            <h3>Jasur K.</h3>
-            <p>Rasmdagidan ham chiroyli chiqdi. Material sifati premium ekan.</p>
-        </div>
-
-        <div class="review-card">
-            <div class="rating">4.8 ★</div>
-            <h3>Madina T.</h3>
-            <p>Buyurtma jarayoni oson, support tez javob berdi. Tavsiya qilaman.</p>
-        </div>
-
-    </div>
-
-</section>
-<div class="casanova-section" id="casanova-section">
-
-    <div class="order-card">
-        <div class="top-circle yellow-bg"><i class="fa-solid fa-truck"></i></div>
-        <h3 class="yellow">Yetkazib berilyapti</h3>
-        <h1>12</h1>
-        <p>Buyurtma</p>
-    </div>
-
-    <div class="order-card">
-        <div class="top-circle green-bg"><i class="fa-solid fa-envelope-circle-check"></i></div>
-        <h3 class="green">Buyurtma berildi</h3>
-        <h1>36</h1>
-        <p>Buyurtma</p>
-    </div>
-
-    <div class="order-card">
-        <div class="top-circle red-bg"><i class="fa-solid fa-cloud-arrow-up"></i></div>
-        <h3 class="red">Buyurtma jamlanyapti</h3>
-        <h1>24</h1>
-        <p>Buyurtma</p>
-    </div>
-
-</div>
-  <div class="premium-section">
-    <div class="premium-container">
-
-      <div class="premium-text">
-        <span class="premium-label">CASANOVA AFZALLIKLARI</span>
-
-        <h1 class="premium-title">
-          Premium sifat va <span>mukammal</span><br>
-          xizmat.
-        </h1>
-
-        <p class="premium-desc">
-          Xarid qilishdan boshlab yetkazib berishgacha bo‘lgan har bir
-          qadamda mijozlarimizga eng yuqori darajadagi xizmatni taqdim etamiz.
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <span class="hero-badge">Eksklyuziv To'plam 2026</span>
+        <h1>Uyingiz Uchun <span>San'at</span> Asarlari</h1>
+        <p>Zamonaviy dizayn va milliy hunarmandchilik uyg'unligi. Biz bilan uyingizga shinamlik va hashamat olib kiring.
         </p>
+        <div class="hero-btns">
+          <a href="products.html" class="btn-primary">Katalogni Ko'rish</a>
+          <a href="#handmade" class="btn-secondary">Hunarmandlar Ishlari</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong>2.5k+</strong>
+            <span>Mahsulotlar</span>
+          </div>
+          <div class="stat-item">
+            <strong>15k+</strong>
+            <span>Mijozlar</span>
+          </div>
+          <div class="stat-item">
+            <strong>100+</strong>
+            <span>Hunarmandlar</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070&auto=format&fit=crop"
+          alt="Premium Sofa">
+        <div class="floating-card">
+          <i class="fa-solid fa-award"></i>
+          <span>Premium Sifat</span>
+        </div>
+      </div>
+    </section>
 
-        <button class="premium-btn">Hozir xarid qilish</button>
+    <!-- Handmade Section (ALOHIDA URG'U) -->
+    <section class="handmade-section" id="handmade">
+      <div class="section-header">
+        <span class="sub-title">Qo'l Mehnati - Bu Yurakdan</span>
+        <h2>Hunarmandlar <span>Maydoni</span></h2>
+        <p>Bizning platformada o'z qo'l mehnati bilan mo'jiza yaratadigan ustalar o'z ishlarini sotishlari mumkin.</p>
       </div>
 
-      <div class="premium-cards">
-
-        <div class="premium-card">
-          <div class="card-icon"><i class="fa-solid icons fa-map-location-dot"></i></div>
-          <h3>Bepul yetkazib berish</h3>
-          <p>Respublika bo‘ylab barcha hududlarga.</p>
+      <div class="handmade-grid">
+        <!-- Hunarmand mahsuloti 1 -->
+        <div class="handmade-card">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?q=80&w=1964&auto=format&fit=crop"
+              alt="Handmade Chair">
+            <span class="tag">Hunarmand Ishi</span>
+          </div>
+          <div class="card-info">
+            <h3>Eman Daraxtidan Kursi</h3>
+            <p class="author">Usta: Abduvali aka</p>
+            <div class="card-footer">
+              <span class="price">1,200,000 so'm</span>
+              <button class="btn-add"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
         </div>
 
-        <div class="premium-card">
-          <div class="card-icon"><i class="fa-solid icons fa-shield"></i></div>
-          <h3>2 yil kafolat</h3>
-          <p>Har bir mebel uchun to‘liq kafolat.</p>
+        <!-- Hunarmand mahsuloti 2 (Highlight Card) -->
+        <div class="handmade-card main-feature">
+          <div class="feature-content">
+            <h3>Siz ham usta ekansiz?</h3>
+            <p>O'z qo'lingiz bilan yasagan mebellaringizni butun O'zbekistonga soting!</p>
+            <ul class="feature-list">
+              <li><i class="fa-solid fa-check"></i> Komissiya 0%</li>
+              <li><i class="fa-solid fa-check"></i> 24/7 Qo'llab-quvvatlash</li>
+              <li><i class="fa-solid fa-check"></i> Tezkor yetkazib berish</li>
+            </ul>
+            <a href="#sell-modal" class="btn-accent">Hozir Sotishni Boshlash</a>
+          </div>
         </div>
 
-        <div class="premium-card">
-          <div class="card-icon"><i class="fa-solid icons fa-arrows-rotate"></i></div>
-          <h3>30 kun qaytarish</h3>
-          <p>Yoqmasa, hech qanday savollarsiz.</p>
+        <!-- Hunarmand mahsuloti 3 -->
+        <div class="handmade-card">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?q=80&w=2130&auto=format&fit=crop"
+              alt="Handmade Table">
+            <span class="tag">Hunarmand Ishi</span>
+          </div>
+          <div class="card-info">
+            <h3>Klassik Jurnal Stoli</h3>
+            <p class="author">Usta: Sharofiddin G'aniyev</p>
+            <div class="card-footer">
+              <span class="price">850,000 so'm</span>
+              <button class="btn-add"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="premium-card">
-          <div class="card-icon"><i class="fa-solid icons fa-desktop"></i></div>
-          <h3>24/7 Support</h3>
-          <p>Kun-u tun doimiy aloqa markazi.</p>
+    <!-- Kategoriyalar -->
+    <section class="categories" id="categories">
+      <div class="section-header">
+        <h2>Kategoriyalar</h2>
+      </div>
+      <div class="category-grid">
+        <a href="#" class="cat-card">
+          <i class="fa-solid fa-couch"></i>
+          <span>Yashash Xonasi</span>
+        </a>
+        <a href="#" class="cat-card">
+          <i class="fa-solid fa-bed"></i>
+          <span>Yotoqxona</span>
+        </a>
+        <a href="#" class="cat-card">
+          <i class="fa-solid fa-kitchen-set"></i>
+          <span>Oshxona</span>
+        </a>
+        <a href="#" class="cat-card">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>Ofis Mebellari</span>
+        </a>
+        <a href="#" class="cat-card">
+          <i class="fa-solid fa-lamp"></i>
+          <span>Yoritish</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Ommabop Mahsulotlar -->
+    <section class="products" id="products">
+      <div class="section-header">
+        <h2>Ommabop <span>Mebellar</span></h2>
+        <div class="filter-btns">
+          <button class="active">Hammasi</button>
+          <button>Divanlar</button>
+          <button>Stollar</button>
         </div>
-
       </div>
 
-    </div>
-  </div>
+      <div class="product-grid">
+        <!-- Mahsulot 1 -->
+        <div class="product-card">
+          <div class="p-img">
+            <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=2070&auto=format&fit=crop"
+              alt="Modern Sofa">
+            <div class="p-actions">
+              <button><i class="fa-solid fa-heart"></i></button>
+              <button><i class="fa-solid fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="p-info">
+            <h3>Nordic Grey Divan</h3>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span>(4.8)</span>
+            </div>
+            <div class="p-footer">
+              <span class="price">4,500,000 so'm</span>
+              <button class="btn-cart"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+          </div>
+        </div>
 
-  <div class="footer" id="footer">
-    <div class="footer-container">
+        <!-- Mahsulot 2 -->
+        <div class="product-card">
+          <div class="p-img">
+            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=2069&auto=format&fit=crop"
+              alt="Desk">
+            <div class="p-actions">
+              <button><i class="fa-solid fa-heart"></i></button>
+              <button><i class="fa-solid fa-eye"></i></button>
+            </div>
+            <span class="badge sale">-15%</span>
+          </div>
+          <div class="p-info">
+            <h3>Minimalist Ish Stoli</h3>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(5.0)</span>
+            </div>
+            <div class="p-footer">
+              <span class="price">1,800,000 so'm</span>
+              <button class="btn-cart"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+          </div>
+        </div>
 
+        <!-- Mahsulot 3 -->
+        <div class="product-card">
+          <div class="p-img">
+            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=1974&auto=format&fit=crop"
+              alt="Chair">
+            <div class="p-actions">
+              <button><i class="fa-solid fa-heart"></i></button>
+              <button><i class="fa-solid fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="p-info">
+            <h3>Velvet Moviy Kursi</h3>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.2)</span>
+            </div>
+            <div class="p-footer">
+              <span class="price">950,000 so'm</span>
+              <button class="btn-cart"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mahsulot 4 -->
+        <div class="product-card">
+          <div class="p-img">
+            <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?q=80&w=1974&auto=format&fit=crop"
+              alt="Bed">
+            <div class="p-actions">
+              <button><i class="fa-solid fa-heart"></i></button>
+              <button><i class="fa-solid fa-eye"></i></button>
+            </div>
+            <span class="badge new">Yangi</span>
+          </div>
+          <div class="p-info">
+            <h3>Royal Yotoqxona To'plami</h3>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(4.9)</span>
+            </div>
+            <div class="p-footer">
+              <span class="price">12,000,000 so'm</span>
+              <button class="btn-cart"><i class="fa-solid fa-cart-plus"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="newsletter-container">
+        <div class="newsletter-text">
+          <h2>Yangiliklardan xabardor bo'ling</h2>
+          <p>Maxsus chegirmalar va yangi kolleksiyalar haqida birinchilardan bo'lib biling.</p>
+        </div>
+        <form action="#" class="newsletter-form">
+          <input type="email" placeholder="Email manzilingiz" required>
+          <button type="submit">Obuna Bo'lish</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-grid">
       <div class="footer-about">
-        <h2 class="footer-logo">Casa<span>Nova</span></h2>
-        <p class="footer-text">
-          O'zbekistondagi eng yetakchi premium mebel brendi.
-          Uyingizdagi har bir lahzani qulay va takrorlanmas qiling.
-        </p>
-
-        <div class="footer-socials">
-          <div class="footer-icon"><i class="fa-brands fa-telegram"></i></div>
-          <div class="footer-icon"><i class="fa-brands fa-instagram"></i></div>
-          <div class="footer-icon"><i class="fa-brands fa-youtube"></i></div>
+        <div class="logo">Casa<span>Nova</span></div>
+        <p>O'zbekistondagi eng premium va innovatsion mebel do'koni. Hunarmandlar va xaridorlar o'rtasidagi ko'prik.</p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </div>
-
       <div class="footer-links">
-        <h3>KATALOG</h3>
-        <a href="#">Yashash xonasi</a>
-        <a href="#">Yotoqxona mebellari</a>
-        <a href="#">Oshxona & Oshxona</a>
-        <a href="#">Bolalar xonasi</a>
-        <a href="#">Yangi kelganlar</a>
+        <h4>Menyular</h4>
+        <ul>
+          <li><a href="#hero">Asosiy</a></li>
+          <li><a href="#products">Mahsulotlar</a></li>
+          <li><a href="#handmade">Hunarmandlar</a></li>
+          <li><a href="#reviews">Izohlar</a></li>
+        </ul>
       </div>
-
       <div class="footer-links">
-        <h3>KOMPANIYA</h3>
-        <a href="#">Biz haqimizda</a>
-        <a href="#">Filiallarimiz</a>
-        <a href="#">Karyera</a>         
-        <a href="#">Hamkorlik</a>
+        <h4>Kategoriyalar</h4>
+        <ul>
+          <li><a href="#">Yashash Xonasi</a></li>
+          <li><a href="#">Yotoqxona</a></li>
+          <li><a href="#">Oshxona</a></li>
+          <li><a href="#">Ofis</a></li>
+        </ul>
       </div>
-
       <div class="footer-contact">
-        <h3>BOG‘LANISH</h3>
-        <p>+998 90 123 4567</p>
-        <p>info@casanova.uz</p>
-        <p>Toshkent sh., Yunusobod tumani, A. Temur 108</p>
-        <p>Du-Yak: 10:00 - 22:00</p>
+        <h4>Bog'lanish</h4>
+        <p><i class="fa-solid fa-phone"></i> +998 (90) 123-45-67</p>
+        <p><i class="fa-solid fa-location-dot"></i> Toshkent sh., Chilonzor 19</p>
+        <p><i class="fa-solid fa-envelope"></i> info@casanova.uz</p>
       </div>
-
     </div>
-
     <div class="footer-bottom">
-      <p>© 2026 CASANOVA. BARCHA HUQUQLAR HIMOYALANGAN.</p>
+      <p>&copy; 2026 CasaNova. Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
 
-      <div class="footer-policy">
-        <span>Maxfiylik siyosati</span>
-        <span>Ommaviy oferta</span>
+  <!-- Sell Modal (CSS Only) -->
+  <div id="sell-modal" class="modal-overlay">
+    <div class="modal-content">
+      <a href="#" class="modal-close">&times;</a>
+      <h2>Mebelingizni Soting</h2>
+      <p>O'z qo'l mehnatingizni biz bilan baham ko'ring.</p>
+      <form class="modal-form">
+        <div class="form-group">
+          <label>Mahsulot nomi</label>
+          <input type="text" placeholder="Masalan: Yog'ochli stol">
+        </div>
+        <div class="form-group">
+          <label>Narxi (so'm)</label>
+          <input type="number" placeholder="0">
+        </div>
+        <div class="form-group">
+          <label>Tavsif</label>
+          <textarea placeholder="Materiali, o'lchami va boshqalar..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Rasm yuklash</label>
+          <input type="file">
+        </div>
+        <button type="submit" class="btn-submit">Yuborish</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Cart Modal (CSS Only) -->
+  <div id="cart-modal" class="modal-overlay">
+    <div class="cart-modal-content">
+      <a href="#" class="modal-close">&times;</a>
+      <h2>Sizning Savatingiz</h2>
+      <div class="cart-items">
+        <div class="cart-item">
+          <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=2070&auto=format&fit=crop"
+            alt="Sofa">
+          <div class="item-details">
+            <h4>Nordic Grey Divan</h4>
+            <p>1 x 4,500,000 so'm</p>
+          </div>
+          <button class="remove-item">&times;</button>
+        </div>
+        <div class="cart-item">
+          <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?q=80&w=1964&auto=format&fit=crop"
+            alt="Chair">
+          <div class="item-details">
+            <h4>Eman Daraxtidan Kursi</h4>
+            <p>2 x 1,200,000 so'm</p>
+          </div>
+          <button class="remove-item">&times;</button>
+        </div>
+      </div>
+      <div class="cart-summary">
+        <div class="total">
+          <span>Jami:</span>
+          <strong>6,900,000 so'm</strong>
+        </div>
+        <a href="#" class="btn-checkout">Buyurtma berish</a>
       </div>
     </div>
   </div>
-</body>
-<div class="dashboard-container">
-       
-<div class="f"></div>
+
 </body>
 
 </html>
-<div>
-  <p>
-    <h1>
-      <fieldset>
-        
-      </fieldset>
-    </h1>
-  </p>
-</div>
- 
- 
- 
-                           
