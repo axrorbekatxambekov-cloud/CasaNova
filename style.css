@@ -1016,6 +1016,9 @@ img {
     box-shadow: 0 5px 20px rgba(0,0,0,0.03);
 }
 
+.submit{
+    transition: 0.8s;
+}
 .filter-group {
     margin-bottom: 30px;
 }
@@ -1128,4 +1131,7 @@ img {
         width: 100%;
         position: static;
     }
+}
+.btn-submit{
+    
 }
